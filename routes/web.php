@@ -18,7 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ID's zijn nog niet uitgewerkt.
 Route::get("/about", "aboutController@about"); // About page
-Route::get("/music", "musicController@music"); // Music page
-Route::get("/cars", "carController@car"); // Car page
-Route::get("/movies", "movieController@movie"); // Movie page
+Route::get("/music/{music_id}", "musicController@music"); // Music page
+Route::get("/cars/{car_id}", "carController@car"); // Car page
+Route::get("/movies/{movie_id}", "movieController@movie"); // Movie page
+Route::get("/profile/{id}", "profileController@profile"); // Profile page
