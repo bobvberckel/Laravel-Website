@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// This route *will* be changed to the homepage.
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello-world', 'TestController@helloWorld');
+Route::get("/about", "aboutController@about"); // About page
+Route::get("/music", "musicController@music"); // Music page
+Route::get("/cars", "carController@car"); // Car page
+Route::get("/movies", "movieController@movie"); // Movie page
