@@ -18,7 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ID's zijn nog niet uitgewerkt.
 Route::get("/about", "AboutController@about")->name("about"); // About page
 Route::get("/music/{music_id}", "MusicController@music")->name("music"); // Music page
 Route::get("/cars/{car_id}", "CarController@car")->name("cars"); // Car page
