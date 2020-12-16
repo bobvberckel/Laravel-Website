@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class carController extends Controller
+class CarController extends Controller
 {
-    public function car()
+    public function car($car_id)
     {
         return view("cars");
     }
