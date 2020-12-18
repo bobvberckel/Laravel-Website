@@ -6,11 +6,8 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    public function about(Request $request)
+    public function about()
     {
-        $theme_color = env("THEME_COLOR");
-        dd($theme_color);
-
         return view("about");
     }
 }

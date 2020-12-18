@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8c4f8-647c-41f8-b70f-1345bcf72f40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/carController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/carController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/movieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/movieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/musicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/musicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/route-names.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_blades.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_carcontroller.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_cars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_controllers-aangemaakt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_controllers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_moviecontroller.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_movies.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_musiccontroller.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bewijzen-bap/routes_fotos/routes_routes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608160064624</updated>
       <workItem from="1608160066735" duration="53000" />
-      <workItem from="1608160133461" duration="148000" />
+      <workItem from="1608160133461" duration="1283000" />
     </task>
     <servers />
   </component>
