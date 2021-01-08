@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
-    public function car($car_id)
+    public function car()
     {
         return view("cars");
     }

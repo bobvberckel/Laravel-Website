@@ -8,6 +8,7 @@ class ProfileController extends Controller
 {
     function getData(Request $req)
     {
+        return view("profile");
         return $req->input();
     }
 }
