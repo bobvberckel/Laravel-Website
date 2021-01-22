@@ -9,23 +9,23 @@ class ProfileController extends Controller
     // Profile Controller
     public function index()
     {
-        return 'Hier komt uw profiel te staan.';
+        return view('profile');
     }
 
     // Register Controller
     public function register()
     {
-        return 'Hier kunt u registreren.';
+        return view('register');
     }
 
     public function registeremail()
     {
-        return 'Hier zal uiteindelijk de mail verstuurt worden om zeker te weten dat het de juiste email is.';
+        return view('registeremail');
     }
 
     // Login Controller
     public function login()
     {
-        return 'Hier kunt u inloggen.';
+        return view('login');
     }
 }

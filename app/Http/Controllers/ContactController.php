@@ -8,11 +8,11 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return 'Hier kunt u contact opnemen met mij.';
+        return view('contact');
     }
 
     public function sendmail()
     {
-        return 'Hier komt te staan dat de mail verstuurt is.';
+        return view('contactmailsend');
     }
 }
