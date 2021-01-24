@@ -3,20 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CarsController extends Controller
 {
-    public function index()
+    public function index($category = "all", $id = 0)
     {
-        return 'Hier komt alles te staan qua auto\'s';
-    }
+        $cars = DB::table('cars')->get();
 
-    public function showCarCategory($category, $id = 0)
-    {
-        if (strtoupper($category) == 'JDM' || strtoupper($category) == 'MUSCLE' || strtoupper($category) == 'RICER' || strtoupper($category) == 'SUPER') {
-            return view('cars', ['category' => $category, 'id' => $id]);
-        } else {
-            return 'Er ging iets niet goed, probeer het later opnieuw.';
-        }
+        return view('cars', ['cars' => $cars]);
     }
 }

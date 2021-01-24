@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('homepage');
 
 // About
 Route::get('/about', 'AboutController@index')->name('about');
@@ -37,15 +35,8 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::post('/contact/sendmail', 'ContactController@sendmail');
 
 // Cars
-Route::get('/cars', 'CarsController@index')->name('cars');
+Route::get('/cars/{category?}/{id?}', 'CarsController@index')->name('cars');
 Route::redirect('/autos', '/cars');
-Route::get('/cars/{category}/{id?}', 'CarsController@showCarCategory');
-
-// Admin
-Route::prefix('admin')->group(function () {
-    Route::get('/', 'AdminController@index')->name('admin');
-    Route::redirect('/beheerder', '/admin');
-
-    Route::get('users', 'AdminController@showUsers')->name('adminUserpanel');
-    Route::redirect('gebruikers', 'users');
-});
+Route::get('/addcar', 'AddCarsController@create')->name('addCars');
+Route::post('/addcar/', 'AddCarsController@store')->name('saveCars');
+Route::get('/viewcar/{carid}', 'AddCarsController@show')->name('viewcar');

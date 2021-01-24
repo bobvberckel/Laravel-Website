@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="nl">
+@extends('layouts.master')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bob Hub | Login</title>
-</head>
+@section('header')
+Homepage
+@endsection
 
-<body>
-	<h2>Hier kunt u inloggen.</h2>
-</body>
-
-</html>
+@section('content')
+<h2>Login</h2>
+@endsection

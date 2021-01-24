@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html lang="nl">
+@extends('layouts.master')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bob Hub | Cars</title>
-</head>
+@section('header')
+Cars
+@endsection
 
-<body>
-	<h3>Bob Hub | {{ strtoupper($category) }}</h3>
-	<h4>Car ID: {{ $id }}</h4>
-</body>
+@section('content')
+<div class="button">
+	<a href="{{ route('addCars') }}"><button>Add Car</button></a>
+</div>
 
-</html>
+<div class="container-fluid">
+	<div class="row">
+		@foreach($cars as $car)
+		<div class="col-l-3 col-md-4 col-sm-12 mb-3">
+			<h4>Brand: <i>{{ $car->brand }}</i></h4>
+			<h5>Type: <i>{{ $car->type }}</i></h5>
+			<p>Buildyear: <i>{{ $car->buildyear }}</i></p>
+			<a href="{{ route('viewcar', ['carid' => $car->id]) }}"><button class="btn btn-info">Informatie bekijken</button></a>
+		</div>
+		@endforeach
+	</div>
+</div>
+@endsection
